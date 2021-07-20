@@ -16,14 +16,14 @@ pd.set_option('display.max_columns',None)
 #sns.set(style='darkgrid',palette='deep',font_scale=1.1,rc={'figure.figsize':[20,10]})
 
 #training files
-survey = pd.read_csv('survey_responses_training.csv')
-voter_info = pd.read_csv('voter_information_training.csv')
-voter_hist = pd.read_csv('voting_history_training.csv')
+survey = pd.read_csv('csvs/survey_responses_training.csv')
+voter_info = pd.read_csv('csvs/voter_information_training.csv')
+voter_hist = pd.read_csv('csvs/voting_history_training.csv')
 
 #testing files
-survey_test = pd.read_csv('survey_responses_testing.csv')
-voter_info_test = pd.read_csv('voter_information_testing.csv')
-voter_hist_test = pd.read_csv('voting_history_testing.csv')
+survey_test = pd.read_csv('csvs/survey_responses_testing.csv')
+voter_info_test = pd.read_csv('csvs/voter_information_testing.csv')
+voter_hist_test = pd.read_csv('csvs/voting_history_testing.csv')
 
 # -------------------------------- Functions --------------------------------------------
 def merge_survey_info(survey,voter_info):
